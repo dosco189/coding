@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>Arth's Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Arth's Survey Form</h1>
+    <p id="description">This is a form that is created exclusively to complete the capstone project on FreeCode Camp. Please do NOT enter sensitive information on this form.</p>
+    <form id="survey-form">
+    <!-- Inside the form element, you are required to enter your name in an input field that has an id of name and a type of text! -->
+    
+    <label for="name" id="name-label">Name<input id="name" type="text" required></label>
+    <label for="email" id="email-label">Email<input id="email" type="email" required></label>
+    <label for="number-label">Number<input id="number" type="number" min="1" max="10" required></label>
+    <label for="dropdown" id="dropdown-label">Select your highest level of education
+        <select id="dropdown" name="dropdown">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+        </select>
+    </label>
+
+    <label for="radio" id="radio-label">Radio
+        <input type="radio" name="radio" value="1">Option 1
+        <input type="radio" name="radio" value="2">Option 2
+    </label>
+    </form>
+
+</body>
+
+You should have a form element with an id of survey-form
+Inside the form element, you are required to enter your name in an input field that has an id of name and a type of text
+Inside the form element, you are required to enter your email in an input field that has an id of email
+If you enter an email that is not formatted correctly, you will see an HTML5 validation error
+Inside the form, you can enter a number in an input field that has an id of number
+The number input should not accept non-numbers, either by preventing you from typing them or by showing an HTML5 validation error (depending on your browser).
+If you enter numbers outside the range of the number input, which are defined by the min and max attributes, you will see an HTML5 validation error
+For the name, email, and number input fields, you can see corresponding label elements in the form, that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label"
+For the name, email, and number input fields, you can see placeholder text that gives a description or instructions for each field
+Inside the form element, you should have a select dropdown element with an id of dropdown and at least two options to choose from
+Inside the form element, you can select an option from a group of at least two radio buttons that are grouped using the name attribute
+Inside the form element, you can select several fields from a series of checkboxes, each of which must have a value attribute
+Inside the form element, you are presented with a textarea for additional comments
+Inside the form element, you are presented with a button with id of submit to submit all the inputs
+Fulfill the user stories and pass all the tests below to complete this project. Give it your own personal style. Happy Coding!
+
+Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to link your stylesheet and apply your CSS

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Cut Calculator</title>
+</head>
+<body>
+    <h1>Video Cut Calculator</h1>
+    <form method="POST">
+        <label for="words">Enter the number of words:</label><br>
+        <input type="text" id="words" name="words"><br><br>
+        <input type="submit" value="Calculate">
+    </form>
+    {% if result %}
+        <h2>Your video is: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
