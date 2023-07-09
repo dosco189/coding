@@ -1,5 +1,5 @@
 # Problem Set 2, hangman.py
-# Name: 
+# Name: Arth Gupta
 # Collaborators:
 # Time spent:
 
@@ -49,8 +49,6 @@ def choose_word(wordlist):
 # Load the list of words into the variable wordlist
 # so that it can be accessed from anywhere in the program
 wordlist = load_words()
-
-
 def is_word_guessed(secret_word, letters_guessed):
     '''
     secret_word: string, the word the user is guessing; assumes all letters are
@@ -60,11 +58,16 @@ def is_word_guessed(secret_word, letters_guessed):
     returns: boolean, True if all the letters of secret_word are in letters_guessed;
       False otherwise
     '''
-    # FILL IN YOUR CODE HERE AND DELETE "pass"
-    pass
-
-
-
+    secret_word_list = list(secret_word)
+    while len(secret_word_list) == len(letters_guessed):
+        if secret_word_list == letters_guessed:
+            return True
+        else:
+            return False
+    else:
+        return False
+    
+  
 def get_guessed_word(secret_word, letters_guessed):
     '''
     secret_word: string, the word the user is guessing
@@ -73,15 +76,19 @@ def get_guessed_word(secret_word, letters_guessed):
       which letters in secret_word have been guessed so far.
     '''
     # FILL IN YOUR CODE HERE AND DELETE "pass"
-    pass
-
-
-
+    secret_word_list = list(secret_word)
+    return_guess = []
+    for i in secret_word_list:
+        if i in letters_guessed:
+            return_guess.append(i)
+        else:
+            return_guess.append('_ ')
+    return ''.join(return_guess)
+  
 def get_available_letters(letters_guessed):
     '''
     letters_guessed: list (of letters), which letters have been guessed so far
-    returns: string (of letters), comprised of letters that represents which letters have not
-      yet been guessed.
+    returns: string (of letters), comprised of letters that represents which letters have not yet been guessed.
     '''
     # FILL IN YOUR CODE HERE AND DELETE "pass"
     pass
