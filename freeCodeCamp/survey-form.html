@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+<title>Survey Form</title>
+<meta charset="UTF-8">
+<title>Registration Form</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is the survey form project</p>
+    
+    <form method="post" id="survey-form">
+        <fieldset>
+            <label id="name-label">First Name: <input id="name" type="text" required placeholder="John Doe"/></label>
+            <label id="email-label">Enter Your Email: <input id="email" name="email" type="email" required placeholder="xyz@yxz.com" /></label>
+            <label id="number-label">Enter a random number: <input id="number" name="number" type="number" required min="0" max="9999" placeholder="189"/></label>
+          </fieldset>
+
+          <fieldset>
+            <label id="dropdown-element">Do you think that this is a dropdown element?
+              <select id="dropdown" name="dropdown-element">
+                <option value="">(select one)</option>
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+              </select>
+            </label>
+          </fieldset>
+        
+          <fieldset>
+            <label id="button-element">Select your favorite animal
+<div>
+  <label><input type="radio" name="animal-preference" value="cats"> Cats</label>
+  <label><input type="radio" name="animal-preference" value="dogs"> Dogs</label>
+</div>
+              </select>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <label>Which of the following programming languages do you know?</label>
+            
+            <div>
+              <label><input type="checkbox" name="languages[]" value="JavaScript"> JavaScript</input><br>
+              <label><input type="checkbox" name="languages[]" value="Python"> Python</label><br>
+              <label><input type="checkbox" name="languages[]" value="Java"> Java</label><br>
+              <label><input type="checkbox" name="languages[]" value="C++"> C++</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <label for="bio">Any other comments you'd wish to add?<br>
+              <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+            </label>
+        
+          </fieldset>
+
+          <fieldset>
+             <input type="submit" id="submit" value="Submit"/>
+          </fieldset>
+    </form>
+
+</body>
